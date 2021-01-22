@@ -14,3 +14,22 @@ const name = 'Max';
  * browser faclities api provides
  * browser provides communucation bridges
  */
+function getName() {
+    return prompt('what is your name', 'shiv');
+}
+
+function greet() {
+    const userName = getName();
+    console.log('Hello ' + userName);
+}
+
+greet();
+/**
+ * execution    ^
+ * | 1. stack     |
+ * | 2. anonymous |
+ * | 3. greet()   |   
+ * | 4. getName() |   
+ * | 5. prompt()  |
+ *  
+ */
